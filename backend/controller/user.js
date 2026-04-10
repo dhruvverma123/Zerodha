@@ -24,7 +24,7 @@ module.exports.signup = async (req, res) => {
   let token = createSecretToken(newUser._id);
 
   res.cookie("token", token, {
-    httpOnly: true,
+    // httpOnly: true,
     sameSite: "lax",
   });
 
@@ -47,7 +47,7 @@ module.exports.login = async (req, res) => {
   if (checkedPassword) {
     let token = createSecretToken(user._id);
     res.cookie("token", token, {
-      httpOnly: true,
+      // httpOnly: true,
       sameSite: "lax",
     });
     res.status(201).json({
