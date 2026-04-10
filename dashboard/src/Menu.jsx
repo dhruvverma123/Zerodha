@@ -106,7 +106,7 @@ export function Popup() {
       .then((res) => {
         toast.success(res.data.response);
         setTimeout(() => {
-          window.location.href = "http://localhost:5173";
+          window.location.href = import.meta.env.VITE_FRONTEND_URL;
         }, 2300);
       });
   };
