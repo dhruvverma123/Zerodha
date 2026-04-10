@@ -100,7 +100,9 @@ export default Menu;
 export function Popup() {
   const handleLogout = () => {
     axios
-      .get("http://localhost:3002/logout", { withCredentials: true })
+      .get(`${import.meta.env.VITE_BACKEND_URL}/logout`, {
+        withCredentials: true,
+      })
       .then((res) => {
         toast.success(res.data.response);
         setTimeout(() => {

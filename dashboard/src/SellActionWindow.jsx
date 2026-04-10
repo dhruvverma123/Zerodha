@@ -9,7 +9,7 @@ function SellActionWindow({ handleCloseSellwindow, uid }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3002/lengthOfHoldings/${uid}`, {
+      .get(`${import.meta.env.VITE_BACKEND_URL}/lengthOfHoldings/${uid}`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -32,7 +32,7 @@ function SellActionWindow({ handleCloseSellwindow, uid }) {
       mode: "Sell",
     };
     if (quantity <= qty) {
-      axios.post("http://localhost:3002/addOrder", options, {
+      axios.post(`${import.meta.env.VITE_API_URL}/addOrder`, options, {
         withCredentials: true,
       });
       handleCloseSellwindow();

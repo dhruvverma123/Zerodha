@@ -7,7 +7,9 @@ const Holdings = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allHoldings", { withCredentials: true })
+      .get(`${import.meta.env.VITE_BACKEND_URL}/allHoldings`, {
+        withCredentials: true,
+      })
       .then((res) => {
         setAllHoldings(res.data);
       })

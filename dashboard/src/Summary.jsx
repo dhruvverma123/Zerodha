@@ -8,7 +8,9 @@ const Summary = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/getUser", { withCredentials: true })
+      .get(`${import.meta.env.VITE_BACKEND_URL}/getUser`, {
+        withCredentials: true,
+      })
       .then((res) => {
         setUsername(res.data.data.name);
       })
