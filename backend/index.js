@@ -44,19 +44,23 @@ const main = async () => {
 };
 
 //authntication is a checker who checks is user has logged or not
-app.get("/allHoldings", wrapAsync(holding.getAllHolding));
+app.get("/allHoldings", authentication, wrapAsync(holding.getAllHolding));
 
 //authntication is a checker who checks is user has logged or not
-app.get("/allPositions", wrapAsync(position.getAllPositions));
+app.get("/allPositions", authentication, wrapAsync(position.getAllPositions));
 
 //orderValidate is an joi validator
-app.post("/addOrder", order.addOrder);
+app.post("/addOrder", orderValidate, authentication, order.addOrder);
 
 //authntication is a checker who checks is user has logged or not
-app.get("/allOrders", wrapAsync(order.allOrders));
+app.get("/allOrders", authentication, wrapAsync(order.allOrders));
 
 //authntication is a checker who checks is user has logged or not
-app.get("/lengthOfHoldings/:id", wrapAsync(holding.lengthOfHolding));
+app.get(
+  "/lengthOfHoldings/:id",
+  authentication,
+  wrapAsync(holding.lengthOfHolding),
+);
 
 // user api endpoints
 //signupValidate is an joi validator
@@ -66,10 +70,10 @@ app.post("/signup", signupValidate, wrapAsync(user.signup));
 app.post("/login", loginValidate, wrapAsync(user.login));
 
 //authntication is a checker who checks is user has logged or not
-app.get("/logout", user.logout);
+app.get("/logout", authentication, user.logout);
 
 //authntication is a checker who checks is user has logged or not
-app.get("/getUser", wrapAsync(user.getUser));
+app.get("/getUser", authentication, wrapAsync(user.getUser));
 
 //Error handling middleware
 app.use((err, req, res, next) => {
