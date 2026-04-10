@@ -9,7 +9,7 @@ module.exports.signup = async (req, res) => {
   let user = await User.findOne({ email: email });
 
   if (user) {
-    return res.json({ message: "User already exsists" });
+    return res.json({ data: { message: "User already exsists" } });
   }
   let hashPassword = await encryptPassword(password);
 
