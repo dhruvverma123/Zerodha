@@ -15,12 +15,12 @@ function Universe() {
         >
           Want to know more about our technology stack? Check out the{" "}
           <a href="" style={{ textDecoration: "none" }}>
-            Zerodha.tech
+            Investiqra.tech
           </a>{" "}
           blog.
         </h4>
         <h3 style={{ color: "#444", marginBottom: "30px", fontSize: "25px" }}>
-          The Zerodha Universe
+          The Investiqra Universe
         </h3>
         <p className="mb-5">
           Extend your trading and investment experience even further with our

@@ -24,7 +24,7 @@ function Brokerage() {
             Charged only on selling side when trading intraday or on F&O.
           </p>
           <p style={{ fontSize: "12px", color: "#444", lineHeight: "1.8" }}>
-            When trading at Zerodha, STT/CTT can be a lot more than the
+            When trading at Investiqra, STT/CTT can be a lot more than the
             brokerage we charge. Important to keep a tab.
           </p>
           <h4
@@ -72,7 +72,7 @@ function Brokerage() {
           </h4>
           <p style={{ fontSize: "12px", color: "#444", lineHeight: "1.8" }}>
             Additional charges of ₹50 per order for orders placed through a
-            dealer at Zerodha including auto square off orders.
+            dealer at Investiqra including auto square off orders.
           </p>
           <h4
             style={{
@@ -276,8 +276,8 @@ function Brokerage() {
             DP (Depository participant) charges
           </h4>
           <p style={{ fontSize: "12px", color: "#444", lineHeight: "1.8" }}>
-            ₹15.34 per scrip (₹3.5 CDSL fee + ₹9.5 Zerodha fee + ₹2.34 GST) is
-            charged on the trading account ledger when stocks are sold,
+            ₹15.34 per scrip (₹3.5 CDSL fee + ₹9.5 Investiqra fee + ₹2.34 GST)
+            is charged on the trading account ledger when stocks are sold,
             irrespective of quantity.
           </p>
           <p style={{ fontSize: "12px", color: "#444", lineHeight: "1.8" }}>

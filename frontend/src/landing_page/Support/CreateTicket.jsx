@@ -20,7 +20,7 @@ function CreateTicket() {
       ],
     },
     {
-      title: "Your Zerodha Account",
+      title: "Your Investiqra Account",
       icon: <i className="fa-solid fa-circle-user icon"></i>,
       list: [
         "Your Profile",

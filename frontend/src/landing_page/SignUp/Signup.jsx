@@ -56,7 +56,7 @@ export default function Signup() {
       >
         <div className="border p-5">
           <h4 className="pb-2 text-grey-100 text-center">
-            Signup with Zerodha
+            Signup with Investiqra
           </h4>
           <TextField label="Name" name="name" type="text" id="name" />
           <TextField label="Email" name="email" type="email" id="email" />

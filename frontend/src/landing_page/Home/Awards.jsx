@@ -10,7 +10,7 @@ function Awards() {
         <div className="col-6 p-5 mt-3">
           <h2>Largest stock broker in India</h2>
           <p>
-            2+ million Zerodha clients contribute to over 15% of all retail
+            2+ million Investiqra clients contribute to over 15% of all retail
             order volumes in India daily by trading and investing in:
           </p>
           <div className="row mt-5">

@@ -21,7 +21,7 @@ function Hero() {
             We kick-started operations on the 15th of August, 2010 <br />
             with the goal of breaking all barriers that traders and <br />{" "}
             investors face in India in terms of cost, support, and <br />
-            technology. We named the company Zerodha, a <br />
+            technology. We named the company Investiqra, a <br />
             combination of Zero and "Rodha", the Sanskrit word for <br />
             barrier.
             <br />

@@ -55,7 +55,9 @@ export default function Login() {
         style={{ width: "50%", padding: "130px 100px 50px 100px" }}
       >
         <div className="border p-5">
-          <h4 className="pb-2 text-grey-100 text-center">Login with Zerodha</h4>
+          <h4 className="pb-2 text-grey-100 text-center">
+            Login with Investiqra
+          </h4>
           <TextField label="Email" name="email" id="email" type="email" />
           <TextField
             label="Password"

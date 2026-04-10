@@ -31,11 +31,16 @@ function Navbar() {
             setLogin(false);
           }}
         >
-          <img
-            src="media/logo.svg"
-            alt="logo"
-            style={{ width: "23%", marginRight: "10px" }}
-          />
+          <h3
+            style={{
+              color: "#000000c7",
+              marginRight: "350px",
+              marginLeft: "150px",
+            }}
+            className="text-primary"
+          >
+            Investiqra
+          </h3>
         </Link>
         <button
           className="navbar-toggler"

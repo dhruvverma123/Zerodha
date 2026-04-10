@@ -23,7 +23,7 @@ function ProductPage() {
       <RightSection
         ImageUrl="media/console.png"
         productName="Console"
-        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        productDescription="The central dashboard for your Investiqra account. Gain insights into your trades and investments with in-depth reports and visualisations."
         tryDemo=""
         linkName1="Learn more →"
       />

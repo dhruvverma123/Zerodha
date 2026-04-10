@@ -20,8 +20,8 @@ function Stats() {
               marginBottom: "25px",
             }}
           >
-            That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores
-            of equity investments, making us India’s largest broker;
+            That's why 1.6+ crore customers trust Investiqra with ~ ₹6 lakh
+            crores of equity investments, making us India’s largest broker;
             contributing to 15% of daily retail exchange volumes in India.
           </p>
           <h2
@@ -45,7 +45,7 @@ function Stats() {
           <h2
             style={{ color: "#424242", fontSize: "20px", marginBottom: "12px" }}
           >
-            The Zerodha universe
+            The Investiqra universe
           </h2>
           <p
             style={{

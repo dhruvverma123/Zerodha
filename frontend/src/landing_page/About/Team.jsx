@@ -29,10 +29,10 @@ function Team() {
           style={{ fontSize: "17px", lineHeight: "1.8", width: "55%" }}
         >
           <p>
-            Nithin bootstrapped and founded Zerodha in 2010 to overcome the
+            Nithin bootstrapped and founded Investiqra in 2010 to overcome the
             hurdles he faced during his decade long stint as a trader. Today,{" "}
             <br />
-            Zerodha has changed the landscape of the Indian broking industry.
+            Investiqra has changed the landscape of the Indian broking industry.
           </p>
           <p>
             He is a member of the SEBI Secondary Market Advisory Committee{" "}

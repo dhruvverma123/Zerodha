@@ -15,14 +15,10 @@ function Footer() {
         <div className="row mb-5">
           <div className="col">
             <div>
-              <img
-                src="media/logo.svg"
-                alt="logo"
-                style={{ width: "65%", marginBottom: "30px" }}
-              />
+              <h3 className="text-primary mb-3">Investiqra</h3>
               <div style={{ lineHeight: "4px", marginBottom: "25px" }}>
                 <p style={{ fontSize: "14px" }}>
-                  © 2010 - 2026, Zerodha Broking Ltd.
+                  © 2010 - 2026, Investiqra Broking Ltd.
                 </p>
                 <p style={{ fontSize: "14px" }}>All rights reserved.</p>
               </div>
@@ -425,7 +421,7 @@ function Footer() {
                     fontSize: "15px",
                   }}
                 >
-                  Zerodha Cares (CSR)
+                  Investiqra Cares (CSR)
                 </a>
               </li>
               <li style={{ marginBottom: "13px" }}>
@@ -439,7 +435,7 @@ function Footer() {
                     fontSize: "15px",
                   }}
                 >
-                  Zerodha.tech
+                  Investiqra.tech
                 </a>
               </li>
               <li style={{ marginBottom: "13px" }}>
@@ -570,19 +566,19 @@ function Footer() {
         </div>
         <div>
           <p style={{ color: "#9b9b9b", fontSize: "11.5px" }}>
-            Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
-            no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
-            Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Registered
-            Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars Colony,
-            Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru -
-            560078, Karnataka, India. For any complaints pertaining to
-            securities broking please write to{" "}
+            Investiqra Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI
+            Registration no.: INZ000031633 CDSL/NSDL: Depository services
+            through Investiqra Broking Ltd. – SEBI Registration no.:
+            IN-DP-431-2019 Registered Address: Investiqra Broking Ltd.,
+            #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School,
+            J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any
+            complaints pertaining to securities broking please write to{" "}
             <a href="#" style={{ textDecoration: "none" }}>
-              complaints@zerodha.com
+              complaints@Investiqra.com
             </a>{" "}
             , for DP related to{" "}
             <a href="#" style={{ textDecoration: "none" }}>
-              dp@zerodha.com
+              dp@Investiqra.com
             </a>
             . Please ensure you carefully read the Risk Disclosure Document as
             prescribed by SEBI | ICF
@@ -639,7 +635,7 @@ function Footer() {
             of allotment. In case of non allotment the funds will remain in your
             bank account. As a business we don't give stock tips, and have not
             authorized anyone to trade on behalf of others. If you find anyone
-            claiming to be part of Zerodha and offering such services, please{" "}
+            claiming to be part of Investiqra and offering such services, please{" "}
             <a href="#" style={{ textDecoration: "none" }}>
               create a ticket here.{" "}
             </a>
