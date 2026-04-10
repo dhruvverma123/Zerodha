@@ -36,14 +36,17 @@ export default function Signup() {
           .then((res) => {
             value = { name: "", email: "", password: "" };
             setLoader(false);
-            toast.success(res.data.data.message);
+            if (res.data.data.message == "User already exsists") {
+              toast.error(res.data.data.message);
+            } else {
+              toast.success(res.data.data.message);
+            }
             // setTimeout(() => {
             //   window.location.href = import.meta.env.VITE_DASHBOARD_URL;
             // }, 2300);
           })
           .catch((rej) => {
             setLoader(false);
-            toast.error(res.data.data.message);
           });
       }}
     >
