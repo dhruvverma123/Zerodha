@@ -14,7 +14,7 @@ function BuyActionWindow({ handleCloseBuyWindow, uid }) {
       price: price,
       mode: "Buy",
     };
-    axios.post(`$import.meta.env.VITE_BACKEND_URL}/addOrder`, options, {
+    axios.post(`${import.meta.env.VITE_BACKEND_URL}/addOrder`, options, {
       withCredentials: true,
     });
     handleCloseBuyWindow(); //to show on order page
