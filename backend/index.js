@@ -25,7 +25,10 @@ const URL = process.env.MONGO_URL;
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: [
+      "https://zerodha-1-92dj.onrender.com",
+      "https://zerodha-2-kqx1.onrender.com",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   }),
