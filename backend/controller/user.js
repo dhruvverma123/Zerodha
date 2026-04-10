@@ -24,7 +24,11 @@ module.exports.signup = async (req, res) => {
   let token = createSecretToken(newUser._id);
   console.log(token);
 
-  res.cookie("token", token);
+  res.cookie("token", token, {
+    httpOnly: true,
+    sameSite: "none",
+    secure: true,
+  });
 
   res.status(201).json({
     data: { message: "user registered successfully", success: true, newUser },
