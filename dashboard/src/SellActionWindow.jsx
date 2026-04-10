@@ -27,7 +27,7 @@ function SellActionWindow({ handleCloseSellwindow, uid }) {
   function handleSell(uid) {
     if (quantity <= qty) {
       axios.post(
-        `${import.meta.env.VITE_API_URL}/addOrder`,
+        `${import.meta.env.VITE_BACKEND_URL}/addOrder`,
         {
           name: uid,
           qty: quantity,
