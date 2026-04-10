@@ -44,7 +44,7 @@ export default function Login() {
             } else {
               toast.success(res.data.response);
               setTimeout(() => {
-                window.location.href = "http://localhost:5174";
+                window.location.href = import.meta.env.VITE_DASHBOARD_URL;
               }, 2300);
             }
           });

@@ -38,7 +38,7 @@ export default function Signup() {
             setLoader(false);
             toast.success(res.data.data.message);
             setTimeout(() => {
-              window.location.href = "http://localhost:5174";
+              window.location.href = import.meta.env.VITE_DASHBOARD_URL;
             }, 2300);
           })
           .catch((rej) => {
