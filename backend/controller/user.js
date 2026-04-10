@@ -24,8 +24,9 @@ module.exports.signup = async (req, res) => {
   let token = createSecretToken(newUser._id);
 
   res.cookie("token", token, {
-    // httpOnly: true,
-    sameSite: "lax",
+    httpOnly: true,
+    sameSite: "none",
+    secure: true,
   });
 
   res.status(201).json({
@@ -47,8 +48,9 @@ module.exports.login = async (req, res) => {
   if (checkedPassword) {
     let token = createSecretToken(user._id);
     res.cookie("token", token, {
-      // httpOnly: true,
-      sameSite: "lax",
+      httpOnly: true,
+      sameSite: "none",
+      secure: true,
     });
     res.status(201).json({
       response: "logged in successfully",
