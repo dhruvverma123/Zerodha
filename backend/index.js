@@ -50,7 +50,7 @@ app.get("/allHoldings", wrapAsync(holding.getAllHolding));
 app.get("/allPositions", wrapAsync(position.getAllPositions));
 
 //orderValidate is an joi validator
-app.post("/addOrder", orderValidate, order.addOrder);
+app.post("/addOrder", order.addOrder);
 
 //authntication is a checker who checks is user has logged or not
 app.get("/allOrders", wrapAsync(order.allOrders));
