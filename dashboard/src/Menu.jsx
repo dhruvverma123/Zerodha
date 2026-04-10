@@ -108,6 +108,9 @@ export function Popup() {
         setTimeout(() => {
           window.location.href = import.meta.env.VITE_FRONTEND_URL;
         }, 2300);
+      })
+      .catch((rej) => {
+        toast.error(rej.data);
       });
   };
 
