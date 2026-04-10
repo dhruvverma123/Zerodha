@@ -23,7 +23,7 @@ export default function Signup() {
         setLoader(true);
         axios
           .post(
-            "http://localhost:3002/signup",
+            `${import.meta.env.VITE_BACKEND_URL}/signup`,
             {
               name: value.name,
               email: value.email,

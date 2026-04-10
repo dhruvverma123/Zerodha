@@ -30,7 +30,7 @@ export default function Login() {
         setLoader(true);
         axios
           .post(
-            "http://localhost:3002/login",
+            `${import.meta.env.VITE_BACKEND_URL}/login`,
             {
               email: value.email,
               password: value.password,
