@@ -37,9 +37,9 @@ export default function Signup() {
             value = { name: "", email: "", password: "" };
             setLoader(false);
             toast.success(res.data.data.message);
-            setTimeout(() => {
-              window.location.href = import.meta.env.VITE_DASHBOARD_URL;
-            }, 2300);
+            // setTimeout(() => {
+            //   window.location.href = import.meta.env.VITE_DASHBOARD_URL;
+            // }, 2300);
           })
           .catch((rej) => {
             setLoader(false);
