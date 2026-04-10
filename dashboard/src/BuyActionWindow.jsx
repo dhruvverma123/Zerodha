@@ -8,15 +8,18 @@ function BuyActionWindow({ handleCloseBuyWindow, uid }) {
   let [price, setPrice] = useState(0.0);
 
   const handleBuy = () => {
-    const options = {
-      name: uid,
-      qty: qty,
-      price: price,
-      mode: "Buy",
-    };
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/addOrder`, options, {
-      withCredentials: true,
-    });
+    axios.post(
+      `${import.meta.env.VITE_BACKEND_URL}/addOrder`,
+      {
+        name: uid,
+        qty: qty,
+        price: price,
+        mode: "Buy",
+      },
+      {
+        withCredentials: true,
+      },
+    );
     handleCloseBuyWindow(); //to show on order page
   };
 

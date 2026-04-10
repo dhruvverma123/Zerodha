@@ -25,16 +25,19 @@ function SellActionWindow({ handleCloseSellwindow, uid }) {
   }, []);
 
   function handleSell(uid) {
-    let options = {
-      name: uid,
-      qty: quantity,
-      price: price,
-      mode: "Sell",
-    };
     if (quantity <= qty) {
-      axios.post(`${import.meta.env.VITE_API_URL}/addOrder`, options, {
-        withCredentials: true,
-      });
+      axios.post(
+        `${import.meta.env.VITE_API_URL}/addOrder`,
+        {
+          name: uid,
+          qty: quantity,
+          price: price,
+          mode: "Sell",
+        },
+        {
+          withCredentials: true,
+        },
+      );
       handleCloseSellwindow();
     } else {
       alert(`you have ${qty} quantity only`);
