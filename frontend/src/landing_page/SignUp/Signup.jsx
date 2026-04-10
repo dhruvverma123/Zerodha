@@ -43,6 +43,7 @@ export default function Signup() {
           })
           .catch((rej) => {
             setLoader(false);
+            toast.error(res.data.data.message);
           });
       }}
     >
