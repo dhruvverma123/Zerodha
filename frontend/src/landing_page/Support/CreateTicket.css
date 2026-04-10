@@ -1,0 +1,111 @@
+.liColor::marker {
+  color: #0d6efd;
+}
+
+.aHover {
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.aHover:hover {
+  color: black !important;
+}
+
+li:has(.liColor:hover)::marker {
+  color: red; /* Change to your desired color */
+}
+
+.hoverEffect {
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2px;
+  align-items: center;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.028);
+}
+
+.innerChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerFirstchild {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.icon {
+  color: blue;
+  font-size: 18px;
+}
+
+.heading {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.upperIconEffect {
+  transition: 0.1s all ease-in-out;
+}
+
+.upperIconEffect.down {
+  rotate: -180deg;
+}
+
+.upperIconEffect.up {
+  rotate: 0deg;
+}
+
+.height0 {
+  transition: 0.3s all ease-in-out;
+  overflow: hidden;
+}
+
+.height0.close {
+  max-height: 0px;
+  opacity: 0;
+}
+
+.height0.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.ulParent {
+  border-left: 10px solid orange;
+  background-color: rgba(255, 166, 0, 0.073);
+  padding: 10px;
+  margin: 10px 0px 20px 0px;
+}
+
+.liStyle {
+  padding: 5px;
+}
+
+.liStyle::marker {
+  color: blue;
+}
+
+.heading2 {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.aTag {
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: -1px;
+}
