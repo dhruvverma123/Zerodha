@@ -22,6 +22,7 @@ module.exports.signup = async (req, res) => {
   newUser.save();
 
   let token = createSecretToken(newUser._id);
+  console.log(token);
 
   res.cookie("token", token, {
     httpOnly: true,
