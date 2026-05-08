@@ -43,19 +43,19 @@ const main = async () => {
   await mongoose.connect(URL);
 };
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/allHoldings", authentication, wrapAsync(holding.getAllHolding));
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/allPositions", authentication, wrapAsync(position.getAllPositions));
 
 //orderValidate is an joi validator
 app.post("/addOrder", orderValidate, authentication, order.addOrder);
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/allOrders", authentication, wrapAsync(order.allOrders));
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get(
   "/lengthOfHoldings/:id",
   authentication,
@@ -69,10 +69,10 @@ app.post("/signup", signupValidate, wrapAsync(user.signup));
 //loginValidate is an joi validator
 app.post("/login", loginValidate, wrapAsync(user.login));
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/logout", authentication, user.logout);
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/getUser", authentication, wrapAsync(user.getUser));
 
 //Error handling middleware
