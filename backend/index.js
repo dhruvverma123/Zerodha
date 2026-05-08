@@ -26,8 +26,8 @@ const URL = process.env.MONGO_URL;
 app.use(
   cors({
     origin: [
-      "https://zerodha-1-92dj.onrender.com",
-      "https://zerodha-2-kqx1.onrender.com",
+      "https://investiqra-1.onrender.com",
+      "https://investiqra-2.onrender.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
@@ -43,19 +43,19 @@ const main = async () => {
   await mongoose.connect(URL);
 };
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/allHoldings", authentication, wrapAsync(holding.getAllHolding));
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/allPositions", authentication, wrapAsync(position.getAllPositions));
 
 //orderValidate is an joi validator
 app.post("/addOrder", orderValidate, authentication, order.addOrder);
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/allOrders", authentication, wrapAsync(order.allOrders));
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get(
   "/lengthOfHoldings/:id",
   authentication,
@@ -69,10 +69,10 @@ app.post("/signup", signupValidate, wrapAsync(user.signup));
 //loginValidate is an joi validator
 app.post("/login", loginValidate, wrapAsync(user.login));
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/logout", authentication, user.logout);
 
-//authntication is a checker who checks is user has logged or not
+//authntication is a checker who checks is user has logged out or not
 app.get("/getUser", authentication, wrapAsync(user.getUser));
 
 //Error handling middleware
@@ -96,4 +96,6 @@ app.listen(PORT, () => {
 //backend error handling middleware -> done
 //MVC architechture -> done
 //validation client and server both -> done
-//next to continue the project from the Apna college
+//next to continue the project from the Apna college -> done
+//try catch block is must to fill in the axios data fetching, if you will not do this then frontend will not communicate with backend api
+//whenever we send cookie to the frontend write secrue :true in the case of deployment to secure the https requests
